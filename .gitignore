@@ -1,0 +1,27 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Dependencies
+node_modules
+
+# Build
+dist
+dist-ssr
+*.local
+
+# Editor
+.DS_Store
+.idea
+.vscode
+*.swp
+*.swo
+
+# OS
+Thumbs.db
