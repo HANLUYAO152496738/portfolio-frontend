@@ -4,8 +4,10 @@ A modern, responsive portfolio website built with React featuring a stunning rai
 
 ## Live Demo
 
-- **Frontend URL**: [Your deployed frontend URL here]
-- **Backend API URL**: [Your deployed API URL here]
+- **Frontend URL**: https://portfolio-frontend-pq0e5hwqz-ioawsjddfjswisahfasiks-projects.vercel.app
+- **Backend API URL**: https://portfolio-backend-j145okke2-ioawsjddfjswisahfasiks-projects.vercel.app
+- **Source Code (Frontend)**: https://github.com/HANLUYAO152496738/portfolio-frontend
+- **Source Code (Backend)**: https://github.com/HANLUYAO152496738/portfolio-backend
 
 ## Features
 
@@ -58,7 +60,12 @@ npm install
 
 3. Create a `.env` file:
 ```env
-VITE_API_URL=http://localhost:5000/api
+VITE_API_URL=http://localhost:5001/api
+```
+
+**Note**: For local development, make sure your backend is running on port 5001. The deployed production backend is at:
+```
+https://portfolio-backend-j145okke2-ioawsjddfjswisahfasiks-projects.vercel.app/api
 ```
 
 4. Start the development server:
@@ -114,14 +121,29 @@ This frontend is designed to work with the Portfolio & Blog API. Make sure to:
 
 ## Deployment
 
-### Vercel (Recommended)
+This frontend is deployed on Vercel.
+
+### Live Deployment
+
+The application is currently deployed at:
+https://portfolio-frontend-pq0e5hwqz-ioawsjddfjswisahfasiks-projects.vercel.app
+
+### Deploy Your Own Instance
+
+#### Vercel (Recommended)
 
 1. Push your code to GitHub
-2. Import project in Vercel
-3. Set environment variable: `VITE_API_URL=<your-api-url>`
-4. Deploy!
+2. Install Vercel CLI: `npm install -g vercel`
+3. Run `vercel` in the project directory
+4. Set environment variable: `VITE_API_URL=<your-api-url>`
+5. Deploy with `vercel --prod`
 
-### Netlify
+Or via Vercel Dashboard:
+1. Import project from GitHub
+2. Set environment variable in project settings
+3. Deploy automatically
+
+#### Netlify
 
 1. Push your code to GitHub
 2. Create new site from Git in Netlify
